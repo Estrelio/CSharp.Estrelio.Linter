@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <PackageId>Estrelio.Linter</PackageId>
+        <version>0.0.1</version>
+        <authors>TabooSun</authors>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <NoDefaultExcludes>true</NoDefaultExcludes>
+        <Description>Contains custom ruleset, stylecop.json, and .editorconfig for code analysis.</Description>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.VisualStudio.Validation" Version="17.8.8" />
+        <PackageReference Include="Microsoft.VisualStudio.Threading" Version="17.12.19" />
+        <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers" Version="17.12.19" />
+        <PackageReference Include="Microsoft.CodeAnalysis" Version="4.12.0" />
+        <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.556" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="src\.editorconfig" Pack="true"/>
+        <Content Include="src\Estrelio.Linter.props" Pack="true" PackagePath="buildTransitive/"/>
+        <Content Include="src\stylecop.json" Pack="true" PackagePath=""/>
+        <Content Include="src\stylecop.ruleset" Pack="true" PackagePath=""/>
+        <Content Include="src\stylecop.test.ruleset" Pack="true" PackagePath=""/>
+    </ItemGroup>
+</Project>

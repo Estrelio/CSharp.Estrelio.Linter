@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<RuleSet Description="Description" ToolsVersion="15.0" Name="Name">
+    <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+        <Rule Id="SA1309" Action="None"/>
+        <!--Don't really see a point to document test methods.-->
+        <Rule Id="SA1600" Action="None"/>
+        <Rule Id="SA1118" Action="None"/>
+    </Rules>
+<!--    Can't use this because Microsoft still doesn't support suppressing warnings for generated code. Check https://github.com/dotnet/roslyn/issues/41171.-->
+    <!--<Rules AnalyzerId="Microsoft.CodeAnalysis.CSharp" RuleNamespace="Microsoft.CodeAnalysis.CSharp">
+        <Rule Id="CS1591" Action="Error"/>
+    </Rules>-->
+</RuleSet>
