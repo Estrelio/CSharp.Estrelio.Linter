@@ -6,7 +6,7 @@ install-local: pack
     dotnet nuget locals global-packages --clear
 
 pack:
-    dotnet pack --configuration Release
+    dotnet build --configuration Release
 
 add-source:
     dotnet nuget add source ~/.local-nuget/packages --name local-nuget
