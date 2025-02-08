@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
         <PackageId>Estrelio.Linter</PackageId>
-        <version>0.0.2</version>
+        <version>0.0.3</version>
         <authors>TabooSun</authors>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
@@ -18,9 +18,11 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.VisualStudio.Validation" Version="17.8.8">
+            <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="Microsoft.VisualStudio.Threading" Version="17.12.19">
+            <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers" Version="17.12.19">
